@@ -1,0 +1,106 @@
+PS D:\Progetto\tgn> python .\train_self_supervised.py --use_memory -d dfqtr_final_with_ts --n_runs 10      
+INFO:root:Namespace(data='dfqtr_final_with_ts', bs=200, prefix='', n_degree=10, n_head=2, n_epoch=50, n_layer=1, lr=0.0001, patience=5, n_runs=10, drop_out=0.1, gpu=0, node_dim=100, time_dim=100, backprop_every=1, use_memory=True, embedding_module='graph_attention', message_function='identity', memory_updater='gru', aggregator='last', memory_update_at_end=False, message_dim=100, memory_dim=172, different_new_nodes=False, uniform=False, randomize_features=False, use_destination_embedding_in_message=False, use_source_embedding_in_message=False, dyrep=False)
+The dataset has 259643 interactions, involving 71710 different nodes
+The training dataset has 144554 interactions, involving 43273 different nodes
+The validation dataset has 38945 interactions, involving 19569 different nodes
+The test dataset has 38947 interactions, involving 19082 different nodes
+The new node validation dataset has 23219 interactions, involving 16468 different nodes
+The new node test dataset has 23833 interactions, involving 16123 different nodes      
+7171 nodes were used for the inductive testing, i.e. are never seen during training    
+INFO:root:num of training instances: 144554
+INFO:root:num of batches per epoch: 723
+INFO:root:start 0 epoch
+INFO:root:epoch: 0 took 1667.75s
+INFO:root:Epoch mean loss: 0.803160267994117
+INFO:root:val auc: 0.9254000914662033, new node val auc: 0.8886231432156637
+INFO:root:val ap: 0.9190437376719119, new node val ap: 0.8650739137281065  
+INFO:root:start 1 epoch
+INFO:root:epoch: 1 took 1685.54s
+INFO:root:Epoch mean loss: 0.7321447187604416
+INFO:root:val auc: 0.9313631811183269, new node val auc: 0.895346136089211
+INFO:root:val ap: 0.9262042375471581, new node val ap: 0.8735857911199036
+INFO:root:start 2 epoch
+INFO:root:epoch: 2 took 2154.79s
+INFO:root:Epoch mean loss: 0.7080420509578447
+INFO:root:val auc: 0.9419677594591298, new node val auc: 0.9033809231242751
+INFO:root:val ap: 0.9363902838566134, new node val ap: 0.8798741178078101
+INFO:root:start 3 epoch
+INFO:root:epoch: 3 took 2013.66s
+INFO:root:Epoch mean loss: 0.6877806450898551
+INFO:root:val auc: 0.9445395168297813, new node val auc: 0.9056362650046168
+INFO:root:val ap: 0.9392358186710923, new node val ap: 0.882087995134503
+INFO:root:start 4 epoch
+INFO:root:epoch: 4 took 1745.53s
+INFO:root:Epoch mean loss: 0.6747374467417742
+INFO:root:val auc: 0.9445194149211866, new node val auc: 0.9049031453464972
+INFO:root:val ap: 0.938920745861657, new node val ap: 0.8805569211930847
+INFO:root:start 5 epoch
+INFO:root:epoch: 5 took 1731.95s
+INFO:root:Epoch mean loss: 0.667724869022066
+INFO:root:val auc: 0.9460543706362999, new node val auc: 0.9078333611525439
+INFO:root:val ap: 0.9412571931348985, new node val ap: 0.8856762170022106
+INFO:root:start 6 epoch
+INFO:root:epoch: 6 took 1741.35s
+INFO:root:Epoch mean loss: 0.6617214368916481
+INFO:root:val auc: 0.9473567914418123, new node val auc: 0.9101642179842316
+INFO:root:val ap: 0.9427703386481742, new node val ap: 0.8875222744977797
+INFO:root:start 7 epoch
+INFO:root:epoch: 7 took 1737.24s
+INFO:root:Epoch mean loss: 0.6503615228466968
+INFO:root:val auc: 0.9490417081313455, new node val auc: 0.9111466966167104
+INFO:root:val ap: 0.9445467988405087, new node val ap: 0.8889820244417029
+INFO:root:start 8 epoch
+INFO:root:epoch: 8 took 1732.49s
+INFO:root:Epoch mean loss: 0.6469888488245538
+INFO:root:val auc: 0.9489133699960364, new node val auc: 0.912020220126903
+INFO:root:val ap: 0.9442681928015192, new node val ap: 0.8894596670762916
+INFO:root:start 9 epoch
+INFO:root:epoch: 9 took 1737.30s
+INFO:root:Epoch mean loss: 0.6392189261824264
+INFO:root:val auc: 0.9502982250983262, new node val auc: 0.9126112457679287
+INFO:root:val ap: 0.945574607456514, new node val ap: 0.8899472534647891
+INFO:root:start 10 epoch
+INFO:root:epoch: 10 took 1727.37s
+INFO:root:Epoch mean loss: 0.6360704383167488
+INFO:root:val auc: 0.9486451699746943, new node val auc: 0.9124481923432061
+INFO:root:val ap: 0.9443019162448291, new node val ap: 0.8903582194583755
+INFO:root:start 11 epoch
+INFO:root:epoch: 11 took 1739.61s
+INFO:root:Epoch mean loss: 0.6343994001712377
+INFO:root:val auc: 0.9491334424067805, new node val auc: 0.9118799423491251
+INFO:root:val ap: 0.9442039004871269, new node val ap: 0.8887961087779199
+INFO:root:start 12 epoch
+INFO:root:epoch: 12 took 1741.19s
+INFO:root:Epoch mean loss: 0.6281183696098183
+INFO:root:val auc: 0.9506966257355406, new node val auc: 0.9152818461893599
+INFO:root:val ap: 0.9460323557833799, new node val ap: 0.8929778122850291
+INFO:root:start 13 epoch
+INFO:root:epoch: 13 took 1741.78s
+INFO:root:Epoch mean loss: 0.6255719627911949
+INFO:root:val auc: 0.9495825334613862, new node val auc: 0.9130065449132279
+INFO:root:val ap: 0.9452000697953402, new node val ap: 0.8907713668604509
+INFO:root:start 14 epoch
+INFO:root:epoch: 14 took 1746.02s
+INFO:root:Epoch mean loss: 0.6230225643635126
+INFO:root:val auc: 0.9487160905058082, new node val auc: 0.9114426367876505
+INFO:root:val ap: 0.9441025621853278, new node val ap: 0.888537318386354
+INFO:root:start 15 epoch
+INFO:root:epoch: 15 took 1740.08s
+INFO:root:Epoch mean loss: 0.6219204826020271
+INFO:root:val auc: 0.9499142424311717, new node val auc: 0.9132234444917964
+INFO:root:val ap: 0.9454775488258554, new node val ap: 0.8908653376517458
+INFO:root:start 16 epoch
+INFO:root:epoch: 16 took 1749.84s
+INFO:root:Epoch mean loss: 0.6185566246880535
+INFO:root:val auc: 0.9496890568310009, new node val auc: 0.914501611146625
+INFO:root:val ap: 0.9452328575361595, new node val ap: 0.8920079275708368
+INFO:root:start 17 epoch
+INFO:root:epoch: 17 took 1745.45s
+INFO:root:Epoch mean loss: 0.6170766814656937
+INFO:root:val auc: 0.9497087046098966, new node val auc: 0.9145281068731207
+INFO:root:val ap: 0.9454419439463189, new node val ap: 0.8925994078516571
+INFO:root:No improvement over 5 epochs, stop training
+INFO:root:Loading the best model at epoch 12
+INFO:root:Loaded the best model at epoch 12 for inference
+INFO:root:Test statistics: Old nodes -- auc: 0.9667475455620936, ap: 0.9690978217569698
+INFO:root:Test statistics: New nodes -- auc: 0.8744332664715336, ap: 0.867572118369053
