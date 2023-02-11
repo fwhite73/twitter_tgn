@@ -101,9 +101,9 @@ def run(data_name, bipartite=True, data_percentage=1):
   max_idx = max(new_df.u.max(), new_df.i.max())
 
   # node features (vectors must have size: 172)
-  #node_feat = preprocessNode(max_idx, NODES_PATH)
+  node_feat = preprocessNode(max_idx, NODES_PATH)
   # comment the row above and uncomment the row below to disable node representation
-  node_feat = np.zeros((max_idx + 1, 172))
+  #node_feat = np.zeros((max_idx + 1, 172))
 
   new_df.to_csv(OUT_DF)
   np.save(OUT_FEAT, feat)
