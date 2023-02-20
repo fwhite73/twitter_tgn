@@ -1,5 +1,4 @@
-# twitter_tgn
-## Twitter Edge Prediction via TGN
+# Twitter Edge Prediction via TGN
 Progetto Machine Learning / Deep Learning
 
 #### Paper di riferimento: https://github.com/twitter-research/tgn
